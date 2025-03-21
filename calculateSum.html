@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title> Home Page</title>
+        <script>
+            function calculateSum()
+            {
+                var a=document.getElementById("txtFirstNumber").value;
+                var b=document.getElementById("txtSecondNumber").value;
+                var c=Number(a) + Number(b);
+                document.getElementById("txtResult").value=c;
+            }
+        </script>
+    </head>
+
+    <body style="color:beige; background-color:black; text-align: center ;">
+        Enter First Number: <input type="text" id="txtFirstNumber" /><br><br><br>
+        Enter Second Number: <input type="text" id="txtSecondNumber"/><br><br><br>
+        <button onclick="calculateSum()"> Sum</button><br><br><br>
+        Result: <input type="text" id="txtResult"/>
+
+    </body>
+</html>
