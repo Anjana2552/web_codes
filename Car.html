@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Car Details</title>
+    
+       </head>
+    <body style="color:beige; background-color:black; text-align: center ;">
+        Enter Car Name: <input type="text" id="txtName" /><br><br><br>
+        Enter Car Model: <input type="text" id="txtModel"/><br><br><br>
+        Enter Car Weight: <input type="text" id="txtWeight"/><br><br><br>
+        <button onclick="create()"> Create Car</button><br><br><br>
+        <button onclick="show()"> Show Car</button><br><br><br>
+        
+        <script src="Car.js"></script>
+        <script>
+      
+      const car=new Car();
+
+      function create()
+      {
+        var name=document.getElementById("txtName").value;
+        var model=document.getElementById("txtModel").value;
+        var weight=document.getElementById("txtWeight").value;
+
+        car.createCar(name,model,weight);
+      }
+
+      function show()
+      {
+        car.showCar();
+      }
+
+    </script>
+
+    </body>
+</html>
